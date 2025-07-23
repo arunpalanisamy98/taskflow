@@ -26,6 +26,6 @@ public class User {
     private String email;
     @Column(unique = true, nullable = false)
     private Instant createdAt;
-    @Column(unique = true, nullable = false)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Task> tasks;
 }

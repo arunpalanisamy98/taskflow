@@ -5,3 +5,5 @@ public enum Status {
     IN_PROGRESS,
     FINISHED
 }
+
+//CREATE TYPE status AS ENUM ('DUE', 'IN_PROGRESS', 'FINISHED');
